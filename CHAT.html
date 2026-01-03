@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- RESPONSIVE VERSION (Option A) — SAME LAYOUT, SAME DESIGN, JUST RESPONSIVE -->
+<!-- ===================== HTML BELOW ===================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <div class="htop">
+        <p class="h">Infinite Loop</p>
+        <div class="p">
+            <button type="button">Home</button>
+            <button type="button">What we do</button>
+            <button type="button">Testimonials</button>
+            <button type="button">Gallery</button>
+            <button type="button">Contact</button>
+        </div>
+    </div>
+
+    <div class="hmain">
+        <p class="h">Infinite Loop</p>
+        <p>Bootstrap 4.0 Parallax Theme</p>
+        <p>Example Of template Website</p>
+    </div>
+</header>
+
+<main>
+<section class="whatwedo">
+    <div class="wwedo">
+        <p class="h">What We Do</p>
+        <p>This is Infinite Loop, free Bootstrap 4.0 HTML template with a parallax effect...</p>
+    </div>
+
+    <div class="wpromise">
+        <div>
+            <div class="w1 w"></div>
+            <p class="h">Market Analysis</p>
+            <p>The primary goal of a market analysis is...</p>
+        </div>
+        <div>
+            <div class="w2 w"></div>
+            <p class="h">Fast Support</p>
+            <p>Purpose of fast support is...</p>
+        </div>
+        <div>
+            <div class="w3 w"></div>
+            <p class="h">Top Security</p>
+            <p>A strong, visible security presence...</p>
+        </div>
+        <div>
+            <div class="w4 w"></div>
+            <p class="h">Social Work</p>
+            <p>Providing counseling, therapy...</p>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <div class="theading">
+        <p class="h">Testimonials</p>
+        <p>Our clients came to us facing challenges...</p>
+    </div>
+
+    <div class="tcrew">
+        <div>
+            <div class="c1 c"></div>
+            <p>Since joining the team...</p>
+            <p>Catherine Win (Designer)</p>
+        </div>
+        <div>
+            <div class="c2 c"></div>
+            <p>The culture here is unmatched...</p>
+            <p>Dual Rocker (CEO)</p>
+        </div>
+        <div>
+            <div class="c3 c"></div>
+            <p>I had limited experience...</p>
+            <p>Sandar Soft (Marketing)</p>
+        </div>
+    </div>
+</section>
+
+<section class="gallery">
+    <div class="gheading">
+        <p class="h">Gallery</p>
+        <p>Praesent sed pharetra lorem...</p>
+    </div>
+    <div class="gpics">
+        <div class="g1"></div>
+        <div class="g2"></div>
+        <div class="g3"></div>
+        <div class="g4"></div>
+        <div class="g5"></div>
+    </div>
+</section>
+</main>
+
+<footer>
+    <div class="fheading">
+        <p class="h">Contact Us</p>
+        <p>Questions? Ideas? Message us.</p>
+    </div>
+
+    <form class="fform">
+        <input type="text" placeholder="Your Name" />
+        <input type="text" placeholder="Your Email" />
+        <textarea placeholder="Message"></textarea>
+    </form>
+
+    <div class="ficons">
+        <div><div class="f1 f"></div><h3>Chat Online</h3></div>
+        <div><div class="f2 f"></div><h3>mail@company.com</h3></div>
+        <div><div class="f3 f"></div><h3>Our Location</h3></div>
+        <div><div class="f4 f"></div><h3>255-662-5566</h3></div>
+    </div>
+</footer>
+</body>
+</html>
+
+<!-- ===================== CSS BELOW ===================== -->
+
+<style>
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+/* -------------------------------- HEADER -------------------------------- */
+header {
+  grid-area: header;
+  background-image: url(header.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 80px;
+}
+
+.htop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.htop .h {
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.p {
+  display: flex;
+  gap: 40px;
+  z-index: 10;
+}
+
+.p button {
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 999999;
+}
+
+.hmain {
+  margin-top: 80px;
+  text-align: center;
+  color: white;
+}
+
+.hmain .h {
+  font-size: 80px;
+  margin: 0;
+}
+
+/* -------------------------------- MAIN -------------------------------- */
+main {
+  grid-area: main;
+}
+
+/* WHAT WE DO */
+.whatwedo {
+  background: rgb(18, 18, 18);
+  padding: 60px 120px;
+}
+
+.wwedo .h {
+  color: rgb(53, 100, 166);
+  font-size: 60px;
+}
+
+.wwedo p {
+  color: grey;
+  font-size: 22px;
+}
+
+.wpromise {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 120px;
+}
+
+.wpromise div {
+  width: 420px;
+}
+
+.w {
+  width: 260px;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.w1 { background-image: url(w1.png); }
+.w2 { background-image: url(w2.png); }
+.w3 { background-image: url(w3.png); }
+.w4 { background-image: url(w4.png); }
+
+/* TESTIMONIALS */
+.testimonials {
+  background-image: url(testimonials.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 120px;
+}
+
+.theading .h {
+  font-size: 50px;
+  text-align: center;
+}
+
+.tcrew {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: center;
+}
+
+.c {
+  width: 180px;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+
+.c1 { background-image: url(c1.png); }
+.c2 { background-image: url(c2.png); }
+.c3 { background-image: url(c3.png); }
+
+/* GALLERY */
+.gallery {
+  background: rgb(18, 18, 18);
+  padding: 80px 60px;
+}
+
+.gpics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.gpics div {
+  width: 240px;
+  height: 320px;
+  background-size: cover;
+}
+
+.g1 { background-image: url(1.jpg); }
+.g2 { background-image: url(2.jpg); }
+.g3 { background-image: url(3.jpg); }
+.g4 { background-image: url(4.jpg); }
+.g5 { background-image: url(5.jpg); }
+
+/* -------------------------------- FOOTER -------------------------------- */
+footer {
+  grid-area: footer;
+  background-image: url(footer.jpg);
+  background-size: cover;
+  padding: 80px 160px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.fheading .h {
+  font-size: 50px;
+}
+
+.fform {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fform input,
+.fform textarea {
+  width: 100%;
+  max-width: 500px;
+  background: transparent;
+  border: 1px solid grey;
+  padding: 15px;
+  color: white;
+  font-size: 18px;
+}
+
+.ficons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.f {
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.f1 { background-image: url(f1.png); }
+.f2 { background-image: url(f2.png); }
+.f3 { background-image: url(f3.png); }
+.f4 { background-image: url(f4.png); }
+
+/* -------------------------------- RESPONSIVE FIX -------------------------------- */
+
+@media (max-width: 1000px) {
+  .htop {
+    padding: 20px;
+  }
+  .p {
+    gap: 20px;
+  }
+  .hmain .h {
+    font-size: 50px;
+  }
+  .wpromise {
+    justify-content: center;
+  }
+  footer {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+</body>
+</html>

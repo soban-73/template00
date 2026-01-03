@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
+body{
+    	font-family: "Raleway", sans-serif;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+                         margin:0px;
+                         padding:0;
+}
+
+/*----------------------------------header---------------------------------------------------------------------*/
+header{
+    background-image: url(header.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-area:header;
+    grid-template-rows: 80px 1fr;
+    grid-template-areas: "htop" "hmain";
+}
+.htop
+{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-area: htop;
+}
+.hmain
+{
+    display: flex;
+    flex-direction:column;
+    grid-area: hmain;
+    align-items: center;
+    margin-top: 17%;
+}
+.htop>.h
+{
+    font-weight: 550;
+    font-size: 30px;
+    color: white;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+.htop>.p
+{
+ display: flex;
+ margin-right: 250px;
+}
+.p>a
+{
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 22px;
+    position: relative;
+    z-index: 10;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 30px;
+    padding-left: 40px;
+} 
+a:hover {
+    background-color: rgb(25, 69, 96);
+}
+.hmain>.h
+{
+    font-size: 100px;
+    color: white;
+}
+.hmain>p
+{
+    margin: 0;
+    color:white;
+    font-size: 20px;
+}
+
+/*----------------------------------------------header---------------------------------------------*/
+
+/*-----------------------------------------------main----------------------------------------------*/
+main
+{
+    display: grid;
+    grid-area: main;
+    height: 310vh;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "whatwedo"
+                         "testimonials"
+                         "gallery" 
+}
+/*--------------------------------------------main-------------------------------------------------*/
+
+/*---------------------------------------whatwedo--------------------------------------------------*/
+.whatwedo
+{
+    display: grid;
+    height: 120vh;
+    grid-template-rows: 350px 1fr;
+    grid-template-areas: "wwedo" "wpromise";
+    background-color: rgb(18, 18, 18);
+}
+.wwedo
+{
+    margin-right: 300px;
+    margin-left: 300px;
+    display: grid;
+    grid-area: wwedo;
+}
+.wwedo>.h{
+    text-align: left;
+    height: 28%;
+    color: #72ABD5;
+    font-size: 70px;
+}
+.wwedo>p{
+    margin-bottom: 0;
+    padding: 0;
+    height: 72%;
+    color: grey;
+    font-size: 21px;
+}
+.wpromise
+{
+    display: flex;
+    flex-direction: row;
+    grid-area: wpromise;
+    flex-wrap: wrap;
+    margin:0;
+    padding: 0;
+    justify-content: center;
+}
+.wpromise>div>p
+{
+    text-align: justify;
+    word-spacing: 2px;
+    line-height: 35px;
+    width: 75%;
+    margin-left: 25%;
+    color: grey;
+    font-size: 20px;
+}
+.wpromise>div
+{
+    width: 35vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+}
+.symbol
+{
+    display: flex;
+    flex-direction: row;
+}
+.symbol>p
+{
+    text-align: justify;
+    font-size: 35px;
+    color: #72ABD5;
+    font-weight: 500;
+}
+.w1
+{
+    background-image: url(w1.png);
+}
+.w2
+{
+    background-image: url(w2.png);
+
+}
+.w3
+{
+
+    background-image: url(w3.png);
+}
+.w4
+{
+    background-image: url(w4.png);
+}
+.w{
+
+    width: 150px;
+    height: 100px;
+    background-repeat: no-repeat;
+}
+/*-----------------------------------------------------whatwedo-----------------------------------------*/
+
+/*-------------------------------------------------testimonials------------------------------------------*/
+.testimonials
+{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 350px 1fr;
+    grid-template-areas:"theading" "tcrew";
+        background-image: url(testimonials.jpg);
+    background-size: cover;
+    color:white
+}
+.theading
+{
+    display: flex;
+    flex-direction: column;
+    grid-area: theading;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+.tcrew
+{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: tcrew;
+    justify-content: center;
+    gap: 100px;
+    margin-left: 300px;
+    margin-right: 200px;
+    font-size: 20px;
+}
+.c1
+{
+    background-image: url(c1.png);
+}
+.c2
+{
+    background-image: url(c2.png);
+}
+.c3
+{
+    background-image: url(c3.png);
+}
+.c
+{
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+}
+.theading>.h{
+    font-size: 50px;
+}
+.theading>p
+{
+    font-size: 20px;
+   text-align: center;
+       width: 900px;
+}
+.tcrew>div
+{
+    width: 270px;
+    font-size: 25px;
+}
+.tcrew>div>p
+{
+    text-align: justify;
+    font-size:20px;
+    line-height: 30px;
+    word-spacing: 2px;
+}
+/*---------------------------------------------------testimonials-------------------------------------*/
+/*----------------------------------------------------gallery------------------------------------------*/
+.gallery
+{
+    display: grid;
+    grid-template-rows:280px 1fr;
+    grid-template-areas: "gheading" "gpics";
+}
+.gallery
+{
+    background-color: rgb(18, 18, 18);;
+}
+.gheading
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+    grid-area: gheading;
+}
+.gpics
+{
+    display: flex;
+    flex-direction: row;
+    grid-area: gpics;
+    gap: 80px;
+    margin-top: 100px;
+    justify-content: center;
+}
+.gheading>.h
+{
+    color: rgb(53, 100, 166);
+    font-size:55px;
+}
+.gheading>p
+{
+    text-align: center;
+    font-size: 20px;
+    color: grey;
+    width: 900px;
+}
+.g1
+{
+    background-image: url(1.jpg);
+}
+.g2
+{
+    background-image: url(2.jpg);
+}
+.g3
+{
+    background-image: url(3.jpg);
+}
+.g4
+{
+    background-image: url(4.jpg);
+}
+.g5
+{
+    background-image: url(5.jpg);
+}
+.gpics>div
+{
+    width: 250px;
+    height: 350px;
+    background-size: cover;
+}
+/*-----------------------------------gallery------------------------------------------*/
+
+/*-------------------------------------footer-------------------------------------------*/
+
+footer
+{
+    height: 90vh;
+    color: white;
+    background-image: url(footer.jpg);
+    display: grid;
+    grid-area: footer;
+    grid-template-rows:200px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+                         "fheading fheading"
+                         "fform ficons";
+}
+
+.fheading
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area:fheading;
+}
+.fform
+{
+    margin-top: 30px;
+    display: flex;
+    grid-area: fform;
+    gap: 23px;
+    flex-direction: column;
+    align-items: center;
+}
+.ficons
+{
+    display: flex;
+    flex-direction: column;
+    grid-area: ficons;
+    font-size: 23px;
+    gap: 10px;
+}
+.fheading>.h
+{
+ font-size: 60px;
+ margin-bottom: 0;
+}
+.fheading>p
+{
+    font-size: 20px;
+    text-align: center;
+}
+.fform>input , .fform>textarea
+{
+    background: transparent ;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.fform>input
+{
+    width: 550px;
+    height: 50px;
+}
+.fform>textarea
+{
+    width: 550px;
+    height: 300px;
+}
+.fform>input::placeholder
+{
+    color: grey;
+    font-size: 20px;
+}
+.fform>textarea::placeholder
+{
+    color: grey;
+    font-size: 25px;
+}
+.f1
+{
+    background-image: url(f1.png);
+}
+.f2
+{
+    background-image: url(f2.png);
+}
+.f3
+{
+    background-image: url(f3.png);
+}
+.f4
+{
+    background-image: url(f4.png);
+}
+.f
+{
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+.ficons>div
+{
+    display: flex;
+    flex-direction: row;
+}
+/*------------------------------footer--------------------------------/
+
+*/
+
