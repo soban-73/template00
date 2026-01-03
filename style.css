@@ -618,5 +618,9 @@ footer
   }
 
   .gpics > div
+    {
+        width:80%
+    }
 }
+
 
