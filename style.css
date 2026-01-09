@@ -9,69 +9,78 @@ body{
                          margin:0px;
                          padding:0;
 }
+*
+{
+        font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+}
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+html,body
+{
+    overflow-x: hidden;
+}
 
 /*----------------------------------header---------------------------------------------------------------------*/
 header{
     background-image: url(header.jpg);
+    width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    display: grid;
-    grid-area:header;
-    grid-template-rows: 80px 1fr;
-    grid-template-areas: "htop" "hmain";
+    display: flex;
+    flex-direction: column;
 }
 .htop
 { 
+    width: 100%;
+    height: 8%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    grid-area: htop;
+    gap: 2%;
 }
 .hmain
 {
+    width: 100%;
+    height: 92%;
     display: flex;
     flex-direction:column;
     grid-area: hmain;
     align-items: center;
-    margin-top: 17%;
+    text-align: center;
+    justify-content: center;
 }
 .htop>.h
 {
     font-weight: 550;
     font-size: 30px;
     color: white;
-    margin-right: 200px;
-    margin-left: 200px;
-    margin-top: 20px;
-    margin-bottom:20px;
+   padding: 0% 8%;
 }
 .htop>.p
 {
  display: flex;
  margin-right: 250px;
 }
+.p
+{
+    margin-top: 20px;
+}
 .p>a
 {
+    white-space: nowrap;
     cursor: pointer;
-    font-family: "Raleway", sans-serif;
     background-color: transparent;
-    border: 0;
     color: white;
     font-size: 22px;
-    position: relative;
-    z-index: 10;
     transition: 0.2s ease-in-out;
     text-decoration: none;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 0;
-    margin-left: 0;
-    padding-right: 30px;
-    padding-left: 40px;
+    padding: 0% 13%;
 } 
 a:hover {
     background-color: rgb(25, 69, 96);
@@ -91,33 +100,24 @@ a:hover {
 /*----------------------------------------------header---------------------------------------------*/
 
 /*-----------------------------------------------main----------------------------------------------*/
-main
-{
-    display: grid;
-    grid-area: main;
-    height: 310vh;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "whatwedo"
-                         "testimonials"
-                         "gallery" 
-}
 /*--------------------------------------------main-------------------------------------------------*/
 
 /*---------------------------------------whatwedo--------------------------------------------------*/
 .whatwedo
 {
     display: grid;
+    width: 100vw;
     height: 120vh;
-    grid-template-rows: 350px 1fr;
-    grid-template-areas: "wwedo" "wpromise";
     background-color: rgb(18, 18, 18);
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
 }
 .wwedo
 {
-    margin-right: 300px;
-    margin-left: 300px;
-    display: grid;
-    grid-area: wwedo;
+    height: 30%;
+    margin-right: 16%;
+    margin-left: 16%;
 }
 .wwedo>.h{
     text-align: left;
@@ -134,12 +134,10 @@ main
 }
 .wpromise
 {
+    height: 70%;
     display: flex;
     flex-direction: row;
-    grid-area: wpromise;
     flex-wrap: wrap;
-    margin:0;
-    padding: 0;
     justify-content: center;
 }
 .wpromise>div>p
@@ -154,8 +152,8 @@ main
 }
 .wpromise>div
 {
-    width: 35vw;
-    height: 35vh;
+    width: 35%;
+    height: 35%;
     display: flex;
     flex-direction: column;
 }
@@ -200,32 +198,30 @@ main
 /*-------------------------------------------------testimonials------------------------------------------*/
 .testimonials
 {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
     height: 100vh;
-    grid-template-rows: 350px 1fr;
-    grid-template-areas:"theading" "tcrew";
-        background-image: url(testimonials.jpg);
+    background-image: url(testimonials.jpg);
     background-size: cover;
     color:white
 }
 .theading
 {
+    height: 40%;
     display: flex;
     flex-direction: column;
-    grid-area: theading;
     align-items: center;
     justify-content: center;
-    margin-top: 5px;
 }
 .tcrew
 {
+    height: 60%;
     display: flex;
-    flex-wrap: wrap;
-    grid-area: tcrew;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 100px;
-    margin-left: 300px;
-    margin-right: 200px;
     font-size: 20px;
 }
 .c1
@@ -253,11 +249,12 @@ main
 {
     font-size: 20px;
    text-align: center;
-       width: 900px;
 }
 .tcrew>div
 {
-    width: 270px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
     font-size: 25px;
 }
 .tcrew>div>p
@@ -271,29 +268,28 @@ main
 /*----------------------------------------------------gallery------------------------------------------*/
 .gallery
 {
-    display: grid;
-    grid-template-rows:280px 1fr;
-    grid-template-areas: "gheading" "gpics";
-}
-.gallery
-{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    gap: 50px;
+    padding-bottom: 10%;
+    flex-direction: column;
     background-color: rgb(18, 18, 18);;
 }
 .gheading
 {
+    height: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 90px;
     grid-area: gheading;
 }
 .gpics
 {
     display: flex;
     flex-direction: row;
-    grid-area: gpics;
+    flex-wrap: wrap;
     gap: 80px;
-    margin-top: 100px;
     justify-content: center;
 }
 .gheading>.h
@@ -306,7 +302,7 @@ main
     text-align: center;
     font-size: 20px;
     color: grey;
-    width: 900px;
+    width: 70%;
 }
 .g1
 {
@@ -340,25 +336,30 @@ main
 
 footer
 {
+    width: 100vw;
     height: 90vh;
     color: white;
     background-image: url(footer.jpg);
-    display: grid;
-    grid-area: footer;
-    grid-template-rows:200px 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-                         "fheading fheading"
-                         "fform ficons";
+    display: flex;
+    flex-direction: column;
 }
 
 .fheading
 {
+    height: 30%;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     grid-area:fheading;
+}
+.fbottom
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
 }
 .fform
 {
@@ -395,7 +396,7 @@ footer
 }
 .fform>input
 {
-    width: 550px;
+    width: 100%;
     height: 50px;
 }
 .fform>textarea
@@ -443,8 +444,77 @@ footer
 }
 /*------------------------------footer--------------------------------/
 
-
-
 */
 
+/*-----------------------------*/
+
+@media (max-width:1500px)
+{
+    .htop
+    {
+        gap: 0;
+    }
+    .p>a
+    {
+        padding: 0% 5%;
+    }
+}
+
+
+@media (max-width:900px)
+{
+    .whatwedo
+    {
+        height: auto ;
+    }    
+      .htop
+    {
+        display: none;
+    }
+    .testimonials
+    {
+        height: auto ;
+        padding-bottom: 3%;
+    }   
+   .tcrew
+   {
+     flex-direction: column;
+   }
+   .tcrew>div
+   {
+    width: 80%;
+   }
+   footer
+   {
+    height: auto;
+   }
+   .fbottom
+   {
+    flex-direction: column;
+    gap: 30px;
+   }
+}
+
+@media (max-width:750px)
+{  
+   .wpromise
+   {
+         flex-direction: column;
+         align-items: center;
+         flex-wrap: nowrap;
+   } 
+   .wpromise>div
+   {
+       width: 80%;
+       height: auto;
+       margin-bottom: 30px;
+   }
+}
+@media (max-width:600px)
+{
+.fform>input, .fform>textarea
+{
+    width: 90vw;
+}
+}
 
