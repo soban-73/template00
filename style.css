@@ -1,13 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
 body{
     	font-family: "Raleway", sans-serif;
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "header"
-                         "main"
-                         "footer";
-                         margin:0px;
-                         padding:0;
 }
 *
 {
@@ -48,7 +41,6 @@ header{
     height: 92%;
     display: flex;
     flex-direction:column;
-    grid-area: hmain;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -100,12 +92,10 @@ a:hover {
 /*----------------------------------------------header---------------------------------------------*/
 
 /*-----------------------------------------------main----------------------------------------------*/
-/*--------------------------------------------main-------------------------------------------------*/
 
 /*---------------------------------------whatwedo--------------------------------------------------*/
 .whatwedo
 {
-    display: grid;
     width: 100vw;
     height: 120vh;
     background-color: rgb(18, 18, 18);
@@ -282,7 +272,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    grid-area: gheading;
 }
 .gpics
 {
@@ -351,7 +340,6 @@ footer
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area:fheading;
 }
 .fbottom
 {
@@ -365,7 +353,6 @@ footer
 {
     margin-top: 30px;
     display: flex;
-    grid-area: fform;
     gap: 23px;
     flex-direction: column;
     align-items: center;
@@ -374,7 +361,6 @@ footer
 {
     display: flex;
     flex-direction: column;
-    grid-area: ficons;
     font-size: 23px;
     gap: 10px;
 }
@@ -517,4 +503,5 @@ footer
     width: 90vw;
 }
 }
+
 
